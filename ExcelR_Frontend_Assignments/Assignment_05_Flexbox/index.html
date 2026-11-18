@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anitha - CSS Flexbox Properties</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Anitha's CSS Flexbox Lab</h1>
+        <p>Demonstration of All Flexbox Properties</p>
+    </header>
+
+    <main>
+
+        <!-- 1. Flex Direction -->
+        <section>
+            <h2>1. Flex Direction</h2>
+            <p>Changes the direction of flex items.</p>
+
+            <h3>Row</h3>
+            <div class="flex-container row">
+                <div class="box">HTML</div>
+                <div class="box">CSS</div>
+                <div class="box">JavaScript</div>
+            </div>
+
+            <h3>Column</h3>
+            <div class="flex-container column">
+                <div class="box">HTML</div>
+                <div class="box">CSS</div>
+                <div class="box">JavaScript</div>
+            </div>
+        </section>
+
+        <!-- 2. Flex Wrap -->
+        <section>
+            <h2>2. Flex Wrap</h2>
+            <p>Controls whether items wrap into multiple lines.</p>
+
+            <div class="flex-container wrap">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+                <div class="box">Box 4</div>
+                <div class="box">Box 5</div>
+                <div class="box">Box 6</div>
+            </div>
+        </section>
+
+        <!-- 3. Flex Flow -->
+        <section>
+            <h2>3. Flex Flow</h2>
+            <p>Shorthand for flex-direction and flex-wrap.</p>
+
+            <div class="flex-container flow">
+                <div class="box">One</div>
+                <div class="box">Two</div>
+                <div class="box">Three</div>
+            </div>
+        </section>
+
+        <!-- 4. Justify Content -->
+        <section>
+            <h2>4. Justify Content</h2>
+            <p>Aligns items along the main axis.</p>
+
+            <h3>Center</h3>
+            <div class="flex-container justify-center">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+
+            <h3>Space Between</h3>
+            <div class="flex-container justify-between">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+
+            <h3>Space Around</h3>
+            <div class="flex-container justify-around">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+
+            <h3>Space Evenly</h3>
+            <div class="flex-container justify-evenly">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+        </section>
+
+        <!-- 5. Align Items -->
+        <section>
+            <h2>5. Align Items</h2>
+            <p>Aligns items along the cross axis.</p>
+
+            <div class="flex-container align-center">
+                <div class="box">Small</div>
+                <div class="box tall">Tall</div>
+                <div class="box">Small</div>
+            </div>
+        </section>
+
+        <!-- 6. Align Content -->
+        <section>
+            <h2>6. Align Content</h2>
+            <p>Controls spacing between multiple flex lines.</p>
+
+            <div class="flex-container align-content">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+            </div>
+        </section>
+
+        <!-- 7. Gap -->
+        <section>
+            <h2>7. Gap Property</h2>
+            <p>Adds space between flex items.</p>
+
+            <div class="flex-container gap-example">
+                <div class="box">HTML</div>
+                <div class="box">CSS</div>
+                <div class="box">JS</div>
+            </div>
+        </section>
+
+        <!-- 8. Order -->
+        <section>
+            <h2>8. Order Property</h2>
+            <p>Changes the visual order of flex items.</p>
+
+            <div class="flex-container order-example">
+                <div class="box order-three">HTML (Order 3)</div>
+                <div class="box order-one">CSS (Order 1)</div>
+                <div class="box order-two">JS (Order 2)</div>
+            </div>
+        </section>
+
+        <!-- 9. Flex Grow -->
+        <section>
+            <h2>9. Flex Grow</h2>
+            <p>Controls how items grow to fill available space.</p>
+
+            <div class="flex-container grow-example">
+                <div class="box grow-one">Grow 1</div>
+                <div class="box grow-two">Grow 2</div>
+                <div class="box">Normal</div>
+            </div>
+        </section>
+
+        <!-- 10. Flex Shrink -->
+        <section>
+            <h2>10. Flex Shrink</h2>
+            <p>Controls how items shrink when space is limited.</p>
+
+            <div class="flex-container shrink-example">
+                <div class="box shrink-zero">Shrink 0</div>
+                <div class="box shrink-one">Shrink 1</div>
+                <div class="box shrink-two">Shrink 2</div>
+            </div>
+        </section>
+
+        <!-- 11. Flex Basis -->
+        <section>
+            <h2>11. Flex Basis</h2>
+            <p>Sets the initial main size of a flex item.</p>
+
+            <div class="flex-container basis-example">
+                <div class="box">Basis 100px</div>
+                <div class="box">Basis 200px</div>
+            </div>
+        </section>
+
+        <!-- 12. Flex Shorthand -->
+        <section>
+            <h2>12. Flex Shorthand</h2>
+            <p>Combines grow, shrink and basis properties.</p>
+
+            <div class="flex-container flex-example">
+                <div class="box">Flex 1</div>
+                <div class="box">Flex 2</div>
+                <div class="box">Flex 1</div>
+            </div>
+        </section>
+
+        <!-- 13. Align Self -->
+        <section>
+            <h2>13. Align Self</h2>
+            <p>Aligns an individual item differently.</p>
+
+            <div class="flex-container self-example">
+                <div class="box self-start">Start</div>
+                <div class="box self-center">Center</div>
+                <div class="box self-end">End</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Anitha Vanamatla | 2026</p>
+        <p>Learning CSS Flexbox Properties</p>
+    </footer>
+
+</body>
+</html>

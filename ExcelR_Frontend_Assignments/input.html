@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anitha - HTML5 Form Controls</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f0fa;
+            margin: 30px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #7353a6;
+        }
+
+        form {
+            background-color: white;
+            max-width: 850px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #d5c9e5;
+        }
+
+        .form-row {
+            margin: 18px 0;
+        }
+
+        label {
+            display: inline-block;
+            margin-right: 8px;
+            font-weight: bold;
+            color: #50377c;
+        }
+
+        input, select, textarea {
+            padding: 9px;
+            margin: 5px;
+            border: 1px solid #b9a6d2;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 90%;
+            height: 80px;
+        }
+
+        button {
+            background-color: #7353a6;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #50377c;
+        }
+
+        .section-title {
+            color: #7353a6;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>HTML5 Form Input Controls</h1>
+
+    <form>
+
+        <h2 class="section-title">Personal Information</h2>
+
+        <!-- Text Input -->
+        <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" id="name"
+                value="Anitha Vanamatla"
+                placeholder="Enter your name">
+        </div>
+
+        <!-- Password Input -->
+        <div class="form-row">
+            <label for="password">Password:</label>
+            <input type="password" id="password"
+                placeholder="Enter your password">
+        </div>
+
+        <!-- Email Input -->
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email"
+                placeholder="Enter your email">
+        </div>
+
+        <!-- Number Input -->
+        <div class="form-row">
+            <label for="age">Age:</label>
+            <input type="number" id="age"
+                placeholder="Enter your age" min="1" max="100">
+        </div>
+
+        <!-- Range Input -->
+        <div class="form-row">
+            <label for="rating">Rating:</label>
+            <input type="range" id="rating"
+                min="0" max="10" value="5">
+        </div>
+
+        <!-- Date Input -->
+        <div class="form-row">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+        </div>
+
+        <!-- Time Input -->
+        <div class="form-row">
+            <label for="time">Time:</label>
+            <input type="time" id="time">
+        </div>
+
+        <!-- File Input -->
+        <div class="form-row">
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" accept="image/*">
+        </div>
+
+        <!-- Week Input -->
+        <div class="form-row">
+            <label for="week">Week:</label>
+            <input type="week" id="week">
+        </div>
+
+        <!-- Month Input -->
+        <div class="form-row">
+            <label for="month">Month:</label>
+            <input type="month" id="month">
+        </div>
+
+        <!-- Datetime-local Input -->
+        <div class="form-row">
+            <label for="datetime">Datetime-Local:</label>
+            <input type="datetime-local" id="datetime">
+        </div>
+
+        <!-- URL Input -->
+        <div class="form-row">
+            <label for="url">URL:</label>
+            <input type="url" id="url"
+                placeholder="Enter website URL">
+        </div>
+
+        <!-- Search Input -->
+        <div class="form-row">
+            <label for="search">Search:</label>
+            <input type="search" id="search"
+                placeholder="Search here">
+        </div>
+
+        <h2 class="section-title">Additional Information</h2>
+
+        <!-- Radio Buttons -->
+        <div class="form-row">
+            <label>Gender:</label>
+
+            <input type="radio" id="male"
+                name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female"
+                name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="form-row">
+            <label>Interests:</label>
+
+            <input type="checkbox" id="reading"
+                name="interest" value="Reading">
+            <label for="reading">Reading</label>
+
+            <input type="checkbox" id="sports"
+                name="interest" value="Sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="coding"
+                name="interest" value="Coding">
+            <label for="coding">Coding</label>
+        </div>
+
+        <!-- Select Dropdown -->
+        <div class="form-row">
+            <label for="country">Country:</label>
+
+            <select id="country" name="country">
+                <option value="India">India</option>
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-row">
+            <label for="message">Message:</label>
+            <br>
+
+            <textarea id="message"
+                placeholder="Enter your message"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-row">
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

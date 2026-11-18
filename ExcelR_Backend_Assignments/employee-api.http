@@ -1,0 +1,22 @@
+### Add New Employee
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "Rahul",
+    "department": "IT",
+    "salary": 45000
+}
+### Update Employee
+PUT http://localhost:8080/api/employees/102
+Content-Type: application/json
+
+{
+    "name": "Rahul Kumar",
+    "department": "Development",
+    "salary": 55000
+}
+### Delete Employee
+DELETE http://localhost:8080/api/employees/103
+### Get Employee by ID
+GET http://localhost:8080/api/employees/102
